@@ -45,6 +45,7 @@ async def answer(bot, query):
                 title=file.file_name,
                 file_id=file.file_id,
                 caption=file.caption or "♻️From - @movie_series_searcher_bot \n ♻️Join - @cineworldzoneo",
+                caption= "♻️From - @movie_series_searcher_bot \n ♻️Join - @cineworldzoneo",
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
@@ -73,7 +74,7 @@ async def answer(bot, query):
 def get_reply_markup(username, query):
     url = 't.me/Movies_searcherupdates'
     buttons = [[
-        InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
+        InlineKeyboardButton('Search again🔎', switch_inline_query_current_chat=query),
         InlineKeyboardButton('Update Channel', url=url),
     ]]
     return InlineKeyboardMarkup(buttons)
