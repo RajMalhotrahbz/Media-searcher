@@ -45,7 +45,7 @@ async def answer(bot, query):
                 title=file.file_name,
                 file_id=file.file_id,
                 caption=file.caption or "♻️From - @movie_series_searcher_bot \n ♻️Join - @cineworldzoneo",
-                caption= "♻️From - @movie_series_searcher_bot \n ♻️Join - @cineworldzoneo",
+              
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
 
