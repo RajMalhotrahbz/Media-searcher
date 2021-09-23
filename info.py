@@ -14,6 +14,7 @@ USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+MAX_RESULTS = int(environ.get('MAX_RESULTS', 10))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
