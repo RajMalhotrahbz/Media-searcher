@@ -42,4 +42,4 @@ Just Press SEARCH HERE and send your movie name.
 
 START_MSG = environ.get('START_MSG', default_start_msg)
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
+INVITE_MSG = environ.get('INVITE_MSG', 'Please join @Movies_searcherupdates to use this bot')
