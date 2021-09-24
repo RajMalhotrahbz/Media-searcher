@@ -19,7 +19,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='You have to subscribe channel',
+                           switch_pm_text='You have to subscribe channel this channel to use me @movie_searcherupdates',
                            switch_pm_parameter="subscribe")
         return
 
@@ -61,7 +61,7 @@ async def answer(bot, query):
                            next_offset=str(next_offset))
     else:
 
-        switch_pm_text = f'{emoji.CROSS_MARK} No results'
+        switch_pm_text = f'{emoji.CROSS_MARK} No result founds '
         if string:
             switch_pm_text += f' for "{string}"'
 
