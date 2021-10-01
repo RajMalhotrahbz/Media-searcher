@@ -44,7 +44,7 @@ async def answer(bot, query):
             InlineQueryResultCachedDocument(
                 title=file.file_name,
                 file_id=file.file_id,
-                caption=file.caption and "♻️From- @movie_series_searcher_bot \n ♻️Join - @cineworldzoneo \n ♻️ Update - @movies_searcherupdates",
+                caption=file.caption or "♻️From- @movie_series_searcher_bot \n ♻️Join - @cineworldzoneo \n ♻️ Update - @movies_searcherupdates",
               
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
                 reply_markup=reply_markup))
