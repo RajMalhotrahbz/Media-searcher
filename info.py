@@ -35,11 +35,11 @@ default_start_msg = """
 
 I Am A Movie Searcher Bot.
 
-Just Press SEARCH HERE and send your movie name.
+Just Click SEARCH HERE Button and Type your movie name.
 
 ♻️ Created by - @Raj_malhotrahb
 """
 
 START_MSG = environ.get('START_MSG', default_start_msg)
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = environ.get('INVITE_MSG', 'Please join @Movies_searcherupdates to use this bot')
+INVITE_MSG = environ.get('INVITE_MSG', 'Please join @Botupdates_cineworld to use this bot')
